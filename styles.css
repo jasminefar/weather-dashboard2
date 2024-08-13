@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #3a7bd5, #3a6073);
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.city-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 4rem;
+}
+
+.weather-description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-container img {
+    width: 100%;
+    height: auto;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info {
+    margin: 10px 0;
+    font-size: 1rem;
+    width: 45%;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .weather-info {
+        flex-direction: column;
+    }
+
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+}
